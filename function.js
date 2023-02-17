@@ -1,0 +1,2 @@
+function updateTheme(){const now=new Date();const hour=now.getHours();const body=document.querySelector('body');if(hour>=20||hour<6){body.classList.add('night-mode')}else{body.classList.remove('night-mode')}}
+updateTheme();setInterval(updateTheme,60*1000)
